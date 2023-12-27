@@ -1,6 +1,4 @@
-# Elliptic [![Build Status](https://secure.travis-ci.org/indutny/elliptic.png)](http://travis-ci.org/indutny/elliptic) [![Coverage Status](https://coveralls.io/repos/indutny/elliptic/badge.svg?branch=master&service=github)](https://coveralls.io/github/indutny/elliptic?branch=master) [![Code Climate](https://codeclimate.com/github/indutny/elliptic/badges/gpa.svg)](https://codeclimate.com/github/indutny/elliptic)
-
-[![Saucelabs Test Status](https://saucelabs.com/browser-matrix/gh-indutny-elliptic.svg)](https://saucelabs.com/u/gh-indutny-elliptic)
+# Elliptic for Deno
 
 Fast elliptic-curve cryptography in a plain javascript implementation.
 
@@ -11,6 +9,13 @@ for your cryptography operations.
 
 ECC is much slower than regular RSA cryptography, the JS implementations are
 even more slower.
+
+## Usage
+
+for only EC, now
+```js
+import EC from "https://code4fukui.github.io/elliptic/lib/elliptic/ec/index.js";
+```
 
 ## Benchmarks
 
