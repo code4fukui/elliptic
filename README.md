@@ -5,17 +5,17 @@ Fast elliptic-curve cryptography in a plain javascript implementation.
 NOTE: Please take a look at http://safecurves.cr.yp.to/ before choosing a curve
 for your cryptography operations.
 
-## Incentive
-
-ECC is much slower than regular RSA cryptography, the JS implementations are
-even more slower.
-
 ## Usage
 
 for only EC, now
 ```js
 import EC from "https://code4fukui.github.io/elliptic/lib/elliptic/ec/index.js";
 ```
+
+## Incentive
+
+ECC is much slower than regular RSA cryptography, the JS implementations are
+even more slower.
 
 ## Benchmarks
 
