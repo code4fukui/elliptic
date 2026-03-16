@@ -1,4 +1,4 @@
-# Elliptic for Deno
+# Elliptic
 
 > 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
@@ -100,6 +100,4 @@ NOTE: That `curve25519` could not be used for ECDSA, use `ed25519` instead.
 
 ## License
 
-This software is licensed under the MIT License.
-
-Copyright Fedor Indutny, 2014.
+MIT License — see [LICENSE](LICENSE).
