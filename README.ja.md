@@ -1,27 +1,25 @@
 # Elliptic
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+プレーンなJavaScript実装による高速な楕円曲線暗号。
 
-Fast elliptic-curve cryptography in a plain JavaScript implementation.
+**注意:** 暗号化処理に使用する曲線を選択する前に、http://safecurves.cr.yp.to/ を確認してください。
 
-**NOTE:** Please take a look at http://safecurves.cr.yp.to/ before choosing a curve for your cryptography operations.
-
-## Usage
+## 使用方法
 
 ### Node.js
 
-Install the library:
+ライブラリのインストール:
 ```bash
 npm install elliptic
 ```
 
-Then, require and use it:
+その後、requireして使用します:
 ```javascript
 var EC = require('elliptic').ec;
 var ec = new EC('secp256k1');
 ```
 
-### Deno / Browser (ESM)
+### Deno / ブラウザ (ESM)
 ```js
 import EC from "https://code4fukui.github.io/elliptic/lib/elliptic/ec/index.js";
 var ec = new EC('secp256k1');
@@ -92,16 +90,16 @@ console.log(shared1.toString(16));
 console.log(shared2.toString(16));
 ```
 
-## Supported Curves
+## サポートする曲線
 
-Elliptic.js supports the following curve types:
+Elliptic.jsは以下の曲線タイプをサポートしています:
 
-*   Short Weierstrass
-*   Montgomery
-*   Edwards
-*   Twisted Edwards
+*   Short Weierstrass (ショート・ワイエルシュトラス)
+*   Montgomery (モンゴメリー)
+*   Edwards (エドワーズ)
+*   Twisted Edwards (ツイスト・エドワーズ)
 
-The following curve presets are embedded in the library:
+以下の曲線プリセットがライブラリに組み込まれています:
 
 *   `secp256k1`
 *   `p192`
@@ -112,11 +110,11 @@ The following curve presets are embedded in the library:
 *   `curve25519`
 *   `ed25519`
 
-**NOTE:** `curve25519` cannot be used for ECDSA. Use `ed25519` for signatures.
+**注意:** `curve25519`はECDSAには使用できません。署名には`ed25519`を使用してください。
 
-## Benchmarks
+## ベンチマーク
 
-`elliptic` is significantly faster than other JavaScript ECC libraries.
+`elliptic`は他のJavaScript ECCライブラリよりもはるかに高速です。
 
 ```bash
 Benchmarking: sign
@@ -144,8 +142,8 @@ Fastest is elliptic#ecdh
 ========================
 ```
 
-## License
+## ライセンス
 
-MIT License — see [LICENSE](LICENSE).
+MIT License — 詳細は [LICENSE](LICENSE) を参照してください。
 
 Copyright Fedor Indutny, 2014.
