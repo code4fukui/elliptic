@@ -4,3 +4,7 @@ coverage/
 npm-debug.log
 1.js
 v8.log
+
+# meta-ops cleanup
+.DS_Store
+Thumbs.db
